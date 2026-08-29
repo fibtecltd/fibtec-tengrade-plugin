@@ -1,0 +1,41 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Install Claude Code CLI
+        run: npm install -g @anthropic-ai/claude-code
+
+      - name: claude plugin validate --strict
+        run: claude plugin validate . --strict
+
+      - name: Validate plugin manifest JSON
+        run: |
+          jq empty .claude-plugin/plugin.json
+          jq empty .claude-plugin/marketplace.json
+          jq empty .mcp.json
+
+      - name: Check required plugin.json fields
+        run: |
+          jq -e '.name and .description' .claude-plugin/plugin.json
+
+      - name: Check marketplace.json references this plugin
+        run: |
+          jq -e '.plugins | map(select(.name == "tengrade")) | length == 1' .claude-plugin/marketplace.json
+
+      - name: Check SKILL.md exists with frontmatter
+        run: |
+          test -f skills/tengrade/SKILL.md
+          head -1 skills/tengrade/SKILL.md | grep -q '^---$'

@@ -1,0 +1,12 @@
+{
+  "name": "tengrade",
+  "description": "Build, publish and manage TenGrade exams and candidate instances from inside Claude Code — list/read tools are free, publishing and inviting candidates spend organisation credit and require an explicit confirm step.",
+  "version": "0.1.0",
+  "author": {
+    "name": "Fibtec Limited",
+    "url": "https://github.com/fibtecltd"
+  },
+  "homepage": "https://github.com/fibtecltd/fibtec-tengrade-plugin",
+  "repository": "https://github.com/fibtecltd/fibtec-tengrade-plugin",
+  "license": "UNLICENSED"
+}

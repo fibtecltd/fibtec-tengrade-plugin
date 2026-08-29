@@ -1,0 +1,16 @@
+{
+  "name": "tengrade",
+  "description": "TenGrade's own Claude Code plugin: exam-building, publishing, and candidate-instance tools for an examiner organisation.",
+  "owner": {
+    "name": "Fibtec Limited",
+    "url": "https://github.com/fibtecltd"
+  },
+  "plugins": [
+    {
+      "name": "tengrade",
+      "source": "./",
+      "description": "TenGrade exam-building, publishing, and candidate-instance tools for Claude Code.",
+      "version": "0.1.0"
+    }
+  ]
+}

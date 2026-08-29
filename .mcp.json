@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "tengrade": {
+      "type": "http",
+      "url": "${TENGRADE_MCP_URL}",
+      "headers": {
+        "Authorization": "Bearer ${TENGRADE_API_KEY}"
+      }
+    }
+  }
+}
