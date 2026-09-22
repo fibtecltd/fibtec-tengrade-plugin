@@ -46,4 +46,4 @@ Per TenGrade's own B9 design decision, this v1 tool surface deliberately exclude
 
 ## Status
 
-Early v1. Distributed for now as a private marketplace within Fibtec's own GitHub organisation (`/plugin marketplace add fibtecltd/fibtec-tengrade-plugin`); a public Anthropic marketplace listing is a separate, later step this repository does not yet include.
+Early v1, MIT licensed. Currently distributed as a private marketplace within Fibtec's own GitHub organisation (`/plugin marketplace add fibtecltd/fibtec-tengrade-plugin`) while this repository's own visibility is flipped to public — a public Anthropic marketplace listing is a separate, later step this repository does not yet include.
