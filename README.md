@@ -9,7 +9,8 @@ This repository is the whole distributable unit: a plugin manifest, an MCP serve
 | Path | Contents |
 |---|---|
 | `.claude-plugin/plugin.json` | Plugin manifest |
-| `.claude-plugin/marketplace.json` | A local marketplace listing this one plugin, for private/internal distribution |
+| `.claude-plugin/marketplace.json` | A marketplace listing this one plugin, so this repository can be added directly |
+| `.claude-plugin/icon.png` | The plugin's listing icon |
 | `.mcp.json` | Points Claude Code at your `TenGradeMcpApi` deployment over remote HTTP, authenticated with a TenGrade API key |
 | `skills/tengrade/SKILL.md` | Teaches Claude the required sequencing around the credit-spending tools and the rate limits that gate every write tool |
 
@@ -46,4 +47,4 @@ Per TenGrade's own B9 design decision, this v1 tool surface deliberately exclude
 
 ## Status
 
-Early v1, MIT licensed. Currently distributed as a private marketplace within Fibtec's own GitHub organisation (`/plugin marketplace add fibtecltd/fibtec-tengrade-plugin`) — this repository is still private, and flipping it to public is a separate, not-yet-taken step (tracked as TenGrade's own R11, `docs/tengrade-r11-plugin-publishing-design.md` in the main `tengrade` repo). Once public, `/plugin marketplace add` works for anyone with no further action needed; a listing in Claude Code's own community marketplace (a real, documented submission process, distinct from the officially-curated one) is a further, also not-yet-taken step.
+Early v1, MIT licensed. The repository is public and the plugin is published in Anthropic's plugin directory. To install it directly, add this repository as a marketplace (see Install above).
