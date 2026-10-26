@@ -7,6 +7,10 @@
     "url": "https://github.com/fibtecltd"
   },
   "homepage": "https://github.com/fibtecltd/fibtec-tengrade-plugin",
+  "documentationUrl": "https://github.com/fibtecltd/fibtec-tengrade-plugin#readme",
+  "supportUrl": "https://github.com/fibtecltd/fibtec-tengrade-plugin/issues",
+  "privacyPolicyUrl": "https://www.tengrade.co.uk/privacy.html",
+  "termsOfServiceUrl": "https://www.tengrade.co.uk/terms.html",
   "repository": "https://github.com/fibtecltd/fibtec-tengrade-plugin",
   "license": "MIT"
 }
